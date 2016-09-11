@@ -25,7 +25,7 @@
 
 import requests
 
-url = 'http://www.ebay.com/'
+url = 'http://www.watchcount.com/'
 headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 r = requests.get(url, headers=headers)
 
