@@ -27,4 +27,4 @@ import requests
 
 r = requests.get('http://www.watchcount.com/completed.php?bkw=beatles+%28airbed%2C%22air+bed%22%2Clilo%2C%22li+lo%22%29&bcat=0&bcts=&sfsb=Show+Me%21&csbin=all&cssrt=ts&bslr=&bnp=&bxp=#serp')
 
-r.status_code
+print(str(r.status_code))
