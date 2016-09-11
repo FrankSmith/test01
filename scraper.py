@@ -25,8 +25,14 @@
 
 import requests
 
-# r = requests.get('http://www.watchcount.com/completed.php?bkw=beatles+%28airbed%2C%22air+bed%22%2Clilo%2C%22li+lo%22%29&bcat=0&bcts=&sfsb=Show+Me%21&csbin=all&cssrt=ts&bslr=&bnp=&bxp=#serp')
-# r = requests.get('http://www.watchcount.com/')
-r = requests.get('http://www.ebay.com/')
+url = 'http://www.ebay.com/'
+headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+r = requests.get(url, headers=headers)
 
 print(str(r.status_code))
+
+# r = requests.get('http://www.watchcount.com/completed.php?bkw=beatles+%28airbed%2C%22air+bed%22%2Clilo%2C%22li+lo%22%29&bcat=0&bcts=&sfsb=Show+Me%21&csbin=all&cssrt=ts&bslr=&bnp=&bxp=#serp')
+# r = requests.get('http://www.watchcount.com/')
+# r = requests.get('http://www.ebay.com/')
+
+# print(str(r.status_code))
